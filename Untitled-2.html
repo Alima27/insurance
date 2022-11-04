@@ -1,0 +1,167 @@
+<select id="carType">
+  <optgroup label="легковой автомобиль">
+		<optgroup label="Объем двигателя">
+			<option selected></option>
+			<option value="auto1-1">Менее 2000 куб.см.</option>
+			<option value="auto1-2">от 2001 до 3001 куб. см.</option>
+			<option value="auto1-3">свыше 3001 куб. см.</option>
+		</optgroup>
+  </optgroup>
+  <optgroup label="электромобиль">
+		<optgroup label="Мощность электродвигателя">
+			<option value="auto2-1">менее 50 кВт/час</option>
+			<option value="auto2-2">свыше 51 кВт/час</option>
+		</optgroup>
+  </optgroup>
+  <optgroup label="грузовой автомобиль">
+		<optgroup label="Максимальная масса">
+			<option value="auto3-1">менее 12 тонн</option>
+			<option value="auto3-2">более 12 тонн</option>			
+		</optgroup>
+  </optgroup>
+	<optgroup label="автобус">
+		<optgroup label="Число пассажирских мест">
+			<option value="auto4-1">до 16 мест</option>
+			<option value="auto4-2">свыше 16 мест</option>
+		</optgroup>
+  </optgroup>
+	<option value="auto5">троллейбус</option>
+	<option value="auto6">мототранспорт</option>
+	<option value="auto7">прицеп</option>
+	<option value="auto8">полуприцеп</option>
+	<option value="auto9">трактор</option>
+	<option value="auto10">самоходная дорожно-строительная машина</option>
+	<option value="auto11">экскаватор</option>
+	<option value="auto12">бульдозер</option>
+</select>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkDiagnostics">
+  <label class="form-check-label name__input" for="checkDiagnostics">
+    Диагностическая карта о прохождении технического осмотра
+  </label>
+</div>
+<select class="form-select" name="citizenship" id="citizenship">
+	<option selected></option>
+	<option value="kg">Кыргызская Республика</option>
+	<option value="oth">Иностранное государство</option>
+</select>
+
+<div class="flex">
+	<input type="checkbox" id="checkNoAmount" name="checkNoAmount" value="Bike">
+	<label for="checkNoAmount"> Авто может управлять неограниченное количество людей</label><br>
+</div>
+<div id="result"></div>
+
+<div class="individuals-date date5">
+	Договор действует с
+	<div class="date1">
+		<label for="date1">Дата начала действия*</label>
+		<input type="date" name="" id="date1" class="date-start">
+	</div>
+	по
+	<div class="date1">
+		<label for="date2">Дата окончания действия*</label>
+		<input type="date" name="" id="date2" class="date-end">
+	</div>
+	включительно
+</div>
+
+<p class="total-price"></p>
+<script>
+	// тип авто
+	const coefficients = {
+  'auto1-1': 1.0,
+  'auto1-2': 1.20,
+  'auto1-3': 1.45,
+	'auto2-1': 1.0,
+	'auto2-2': 1.20,
+	'auto3-1': 1.60,
+	'auto3-2': 2.0,
+	'auto4-1': 1.45,
+	'auto4-2': 1.65,
+	'auto5': 0.8,
+  'auto6': 0.45,
+	'auto7': 0.45,
+  'auto8': 0.45,
+	'auto9': 0.45,
+  'auto10': 0.45,
+	'auto11': 0.45,
+  'auto12': 0.45,
+};
+
+//гражданство 
+const citizenship ={
+	'kg': 1.0,
+	'oth': 2.20,
+};
+
+// количество дней
+var total
+const dateStart = document.querySelector(".date-start");
+const dateEnd = document.querySelector(".date-end");
+const totalPrice = document.querySelector(".total-price");
+
+dateStart.addEventListener("input", () => calculerPrix());
+dateEnd.addEventListener("input", () => calculerPrix());
+const calculerPrix = () => {
+  if (dateEnd.value === "" || dateStart.value === "") return;
+  totalPrice.innerText = `${getNumberOfDays(dateStart.value, dateEnd.value)} days`;
+}
+
+const getNumberOfDays = (start, end) => {
+    const date1 = new Date(start);
+    const date2 = new Date(end);
+    const oneDay = 1000 * 60 * 60 * 24;
+    const diffInTime = date2.getTime() - date1.getTime();
+    const diffInDays = Math.round(diffInTime / oneDay);  
+    return get(diffInDays);
+}
+function get(dif){
+  if(dif > 5 && dif < 15) {
+    return 0.2
+  }
+  if(dif > 16 && dif < 31) {
+    return 0.3
+  }
+  if(dif > 90) {
+    return 0.5
+  }
+  if(dif > 180) {
+    return 0.7
+  }
+  if(dif > 270) {
+    return 0.9
+  }
+  if(dif > 365) {
+    return 1
+  }
+}
+
+const selectCarType = document.querySelector('#carType');
+const selectCountry = document.querySelector('#citizenship');
+const checkDiagnostics = document.querySelector('#checkDiagnostics');
+const checkNoAmount = document.querySelector('#checkNoAmount');
+const result = document.querySelector('#result');
+
+const update = () => {
+  const sType = coefficients[selectCarType.value];
+  const cType = citizenship[selectCountry.value];
+  const cDiag = checkDiagnostics.checked ? 0.8 : 1;
+  const cAmount = checkNoAmount.checked ? 1 : 1.6;
+  const cDays = getNumberOfDays(dateStart.value, dateEnd.value);
+  console.log('cDays', cDays);
+  
+  const total = 1680 * sType * cType * cDiag * cAmount * cDays;
+  result.innerText = `Итоговая цена: ${total.toFixed(5)} руб`;
+}
+
+update(); // initial
+
+selectCarType.addEventListener('change', update);
+selectCountry.addEventListener('change', update);
+checkDiagnostics.addEventListener('change', update);
+checkNoAmount.addEventListener('change', update);
+dateStart.addEventListener('change', update);
+dateEnd.addEventListener('change', update);
+</script>

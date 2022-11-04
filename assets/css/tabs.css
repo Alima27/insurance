@@ -1,0 +1,150 @@
+.tabs a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000 !important;
+  padding: 15px 0;
+  background: #0b3c32;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.tabs a:hover,
+.tabs a.active {
+  background: #EBCB7A !important;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix{
+	display: flex !important;
+	margin: 0 !important;
+}
+
+.clearfix li{
+	width: 100%;
+}
+
+.clearfix .tab1{
+	border-radius: 0 0 0 50px ;
+}
+
+.clearfix .tab7{
+	border-radius: 0 0 50px 0;
+}
+
+.filials__tab section{
+	background: url(../img/back-map.png) 100% 100% no-repeat;
+	background-size: cover;
+}
+
+.filials__tab .form-control{
+	background-color: unset !important;
+	color: #fff !important;
+}
+
+.filials__tab .filials__block{
+	padding: 20px 30px;
+}
+
+.filials__tab a{
+	font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff !important;
+}
+
+.filials__tab p{
+	font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff !important;
+  margin: 5px 0;
+}
+
+.filials__tab h4{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 35px;
+	color: #fff;
+}
+
+.filials__tab input::placeholder, .textarea-tab::placeholder{
+	color: #fff !important;
+}
+
+.map-block {
+	width: 55%;
+	height: 300px;
+	margin: 15px 0px;
+}
+
+iframe{
+	margin: 0 !important;
+}
+
+.background-map{
+	height: 350px;
+}
+
+.right-block {
+	width: 500px;
+}
+
+@media (max-width:798px){
+	.right-block p{
+		font-size: 12px;
+	}
+	.filials__tab a{
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.right-block {
+    width: auto;
+}
+
+	.tabs a{
+		padding: 10px 0;
+	}
+
+	.map-block{
+		height: auto;
+		width: 100%;
+	}
+
+	.clearfix a{
+		font-size: 15px;
+	}
+
+	.clearfix{
+		display: block !important;
+	}
+
+	.clearfix .tab1{
+		border-radius: 0;
+	}
+	
+	.clearfix .tab7{
+		border-radius: 0 0 50px 50px;
+	}
+
+	.filials__tab .filials__block {
+    padding: 5px 10px;
+	}
+	.background-map{
+		height: auto;
+	}
+	.form-div .row{
+		display: flex;
+		flex-direction: column;
+	}
+}

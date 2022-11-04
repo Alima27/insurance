@@ -1,0 +1,101 @@
+.modal{
+	top: 0 !important;
+}
+
+.modal-dialog{
+	max-width: 100% !important;
+}
+
+.card__text{
+	text-align: center !important;
+	font-weight: 100 !important;
+	font-size: 17px;
+	color: #0b3c32;
+	align-items: center;
+}
+
+li.card__text svg{
+	height: 15px;
+	margin-right: 10px;
+}
+
+.modal-body__title{
+	font-weight: 900 !important;
+	font-size: 25px !important;
+	color: #0b3c32;
+	text-align: left !important;
+	margin-bottom: 18px !important;
+}
+
+.card-text p{
+	font-size: 20px !important;
+  font-style: normal !important;
+	font-weight: 400 !important;
+  line-height: 29px !important;
+  color: #0B3C32 !important;
+}
+
+.modal-body ul{
+	margin-bottom: 30px !important;
+}
+
+.center{
+	text-align: center !important;
+}
+
+.card__modal-footer button:nth-child(1){
+	background: rgb(11 60 50) !important;
+	color: #e9cb76 !important;
+	height: 70px;
+	text-align: center !important;
+	font-weight: 900 !important;
+	font-size: 21px;
+	padding: 22px 0;
+	width: 100%;
+}
+
+.background-form{
+	background: unset !important;
+	backdrop-filter: blur(3px);
+	padding: 60px 0;
+}
+
+.form-resume{
+	display: block;
+	margin: 0 auto !important;
+	width: 40% !important;
+}
+
+@media (min-width: 576px){
+	.modal-dialog {
+			max-width: 500px;
+			margin: 0 auto !important;
+	}
+}
+
+@media (max-width:798px){
+	.card__text {
+    text-align: left !important;
+    font-weight: 100 !important;
+    font-size: 17px;
+    color: #0b3c32;
+    align-items: center;
+	}
+	.card-body p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    color: #0B3C32 !important;
+    width: 100%;
+    text-align: left;
+	}
+
+	.card-body h5{
+		height: auto !important;
+	}
+
+	.form-resume{
+		width: 100% !important;
+	}
+}

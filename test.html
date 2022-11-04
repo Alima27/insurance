@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="fontawesome/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/icon-tab.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<title>KYRGYZSTAN</title>
+	</head>
+	<body>
+		<header>
+			<div class="wrapper header">
+				<nav class="wrapper d-flex navigation">
+					<a href="index.html">
+						<span class="logo header-logo"></span>
+					</a>
+					<a href="#!" class="navigation-mobile-collapse"><span class="span"></span></a>
+					<div class="navigation-menu">
+						<div class="header__nav">
+							<ul class="header__menu">
+								<li class=" underline-one">
+									<a href="about-us.html" class="header__a">
+										О компании  
+									</a>
+								</li>
+								<li class="underline-one">
+									<a href="news.html" class="header__a">
+										Новости 
+									</a>
+								</li>
+								<li class="underline-one">
+									<a href="vacancy.html" class="header__a">
+										Вакансии
+									</a>
+								</li>
+								<li class="underline-one">
+									<a href="contacts.html" class="header__a">
+										Контакты
+									</a>
+								</li>
+								<li class="header__widgets">
+									<ul class="d-flex header__widgets1">
+										<li class="d-flex user-container">
+											<a href="login.html">
+											<span class="user">
+												<i class="fa-regular fa-user"></i>
+											</span>
+											<span class="user-text header__a">
+												Войти												
+											</a>
+										</li>
+										<li class="header__widgets-li">
+											<a class="dropdown-trigger header__a" href="#">RU</a>
+											<ul class="dropdown-menu-widgets">
+												<li class="dropdown-menu-lang">
+													<a href="#" class="header__a">RU</a>
+												</li>
+												<li class="dropdown-menu-lang">
+													<a href="#" class="header__a">KG</a>
+												</li>
+												<li class="dropdown-menu-lang">
+													<a href="#" class="header__a">EN</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<ul class="header__contacts">
+							<li>
+								<a href="tel:+996708487435" class="header__tel-a">
+									+996 708 48 74 35
+								</a>
+							</li>
+							<li>
+								<a href="tel:+996559383636" class="header__tel-a">
+									+996 559 38 36 36
+								</a>
+							</li>
+							<li>
+								<a href="tel:+996312383131" class="header__tel-a">
+									+996 312 38 31 31
+								</a>
+							</li>
+							<li>
+								<a href="tel:+996312383636" class="header__tel-a">
+									+996 312 38 36 36
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="wrapper">
+			<!-- Button trigger modal -->
+			<button type="button" class="about-us__text push-btn" data-bs-toggle="modal" data-bs-target="#dsago">
+				ДСАГО - добровольное страхование автогражданской ответственности 
+			</button>
+			<div class="individuals-modal calculator fade" id="dsago" tabindex="-1" aria-labelledby="dsago" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header modal-header__color">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> Закрыть</button>
+						</div>
+						<div class="modal-body">
+							<div class="modal-body__title background">
+									Программа «ДСАГО – добровольное страхование автогражданской ответственности»
+							</div>
+							<p class="line1">
+								Программа для ответственных водителей
+							</p>
+							<p class="line2">
+								Застрахуйте ответственность за причинение вреда другим лицам и их имуществу
+							</p>
+							<p class="line1">
+								И мы выплатим пострадавшим
+							</p>
+							<div class="calculator__price">
+								до <strong>500 000</strong> сом
+							</div>
+							<p class="line4">
+								это будет стоить всего
+							</p>
+							<p class="line5">
+								чтобы расчитать точную стоимость заполните поля
+							</p>
+							<div class="calculator__price">
+								<strong class="background-y">1680</strong> сомов
+							</div>
+							<form class="needs-validation row" novalidate>
+								<div class="mb-3 col-6">
+									<p class="name__input">Выберите тип транспортного средства*</p>
+									<select class="form-select" id="carType">
+										<optgroup label="легковой автомобиль">
+											<optgroup label="Объем двигателя">
+												<option selected></option>
+												<option value="auto1-1">Менее 2000 куб.см.</option>
+												<option value="auto1-2">от 2001 до 3001 куб. см.</option>
+												<option value="auto1-3">свыше 3001 куб. см.</option>
+											</optgroup>
+										</optgroup>
+										<optgroup label="электромобиль">
+											<optgroup label="Мощность электродвигателя">
+												<option value="auto2-1">менее 50 кВт/час</option>
+												<option value="auto2-2">свыше 51 кВт/час</option>
+											</optgroup>
+										</optgroup>
+										<optgroup label="грузовой автомобиль">
+											<optgroup label="Максимальная масса">
+												<option value="auto3-1">менее 12 тонн</option>
+												<option value="auto3-2">более 12 тонн</option>			
+											</optgroup>
+										</optgroup>
+										<optgroup label="автобус">
+											<optgroup label="Число пассажирских мест">
+												<option value="auto4-1">до 16 мест</option>
+												<option value="auto4-2">свыше 16 мест</option>
+											</optgroup>
+										</optgroup>
+										<option value="auto5">троллейбус</option>
+										<option value="auto6">мототранспорт</option>
+										<option value="auto7">прицеп</option>
+										<option value="auto8">полуприцеп</option>
+										<option value="auto9">трактор</option>
+										<option value="auto10">самоходная дорожно-строительная машина</option>
+										<option value="auto11">экскаватор</option>
+										<option value="auto12">бульдозер</option>
+									</select>
+								</div>
+
+								<div class="mb-3 col-6">
+									<label for="dsago14" class="name__input">Государственный номер*</label>
+									<input type="text" class="form-control" id="dsago14" required>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="dsago21" class="name__input">Объем двигателя*</label>
+									<input type="text" class="form-control" id="dsago21" required>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="dsago16">Номер VIN/кузова/шасси*</label>
+									<input type="text" class="form-control" id="dsago16" required>
+								</div>
+								<div class="mb-3 col-6">
+									<p class="name__input">Марка*</p>
+									<select class="form-select" aria-label="Default select example">
+										<option selected></option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="dsago15">Номер двигателя*</label>
+									<input type="text" class="form-control" id="dsago15" required>
+								</div>
+								<div class="mb-3 col-6">
+									<p class="name__input">Модель*</p>
+									<select class="form-select" aria-label="Default select example">
+										<option selected></option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="dsago17">Цвет*</label>
+									<input type="text" class="form-control" id="dsago17" required>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="dsago13">Год выпуска*</label>
+									<input type="number" class="form-control" id="dsago013" required>
+								</div>
+								<div class="mb-3 col-6" name="myform">
+									<p class="name__input">Зарегистрировано*</p>
+									<select class="form-select" name="citizenship" id="citizenship">
+										<option selected></option>
+										<option value="kg">Кыргызская Республика</option>
+										<option value="oth">Иностранное государство</option>
+									</select>
+									<input type="text" name="additional" id="additional" hidden>									
+								</div>
+								<div class="check-block">
+									<p class="line1">
+										Приложить следующие документы:
+									</p>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="check1" required>
+										<label class="form-check-label name__input" for="check1">
+											Паспорт транспортного средства*
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="check2" required>
+										<label class="form-check-label name__input" for="check2">
+											Свидетельство о регистрации транспортного средства*
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="check3" required>
+										<label class="form-check-label name__input" for="check3">
+											Технический паспорт/технический талон либо аналогичные документы*
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="checkDiagnostics">
+										<label class="form-check-label name__input" for="checkDiagnostics">
+											Диагностическая карта о прохождении технического осмотра
+										</label>
+									</div>
+									<div class="d-flex block__1">
+										<div class="col-3">
+											<label for="dsago60" class="name__input">Номер</small></label>
+											<input type="text" class="form-control" id="dsago60" required>
+										</div>
+										<div class="col-5">
+											<label for="dsago61" class="name__input">Дата очередного технического осмотра</small></label>
+											<input type="date" class="form-control" id="dsago61" required>
+										</div>
+									</div>
+								</div>
+								<p class="line2">
+									Сведения о владельце и водителях авто:
+								</p>
+								<div class="mb-3">
+									<label for="standart01" class="name__input">ФИО водителя авто*</label>
+									<input type="text" class="form-control" id="standart01" required>
+								</div>
+								<!--  -->
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input ShowOrHide" type="checkbox" value="" id="invalidCheckall">
+										<label class="form-check-label name__input" for="invalidCheckall">
+											Иностранный гражданин
+										</label>
+										<div id="hide4" class="ShowOrHide row" style="display:none;">
+											<div class="mb-3">
+												<label for="in1" class="name__input">ФИО*</label>
+												<input type="text" class="form-control" id="in1" required>
+											</div>
+											<div class="mb-3 col-6">
+												<label for="in2" class="name__input"> Дата рождения*</label>
+												<input type="date" class="form-control" id="in2" required>
+											</div>
+											<div class="mb-3 col-6">
+												<label for="in3" class="name__input">ПИН* <small>(14-значный номер на в паспорте)</small></label>
+												<input type="number" class="form-control" id="in3" required>
+											</div>
+											<div class="mb-3 col-6">
+												<label for="in4" class="name__input">Контактный телефон</label>
+												<input type="tel" placeholder="+996 12-34-56" class="form-control phone" id="all34" required>
+											</div>
+									 </div>
+									</div>
+								</div>
+								<!--  -->
+								<div class="mb-3 col-6">
+									<label for="dsago0211" class="name__input">Дата рождения*</label>
+									<input type="date" class="form-control" id="dsago0211" required>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="dsago0321" class="name__input">ПИН* <small>(14-значный номер на в паспорте)</small></label>
+									<input type="text" class="form-control" id="dsago0321" required>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="dsago03211" class="name__input">Серия паспорта*</small></label>
+									<input type="text" class="form-control" id="dsago03211" required>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="dsago0421" class="name__input">Контактный телефон</label>
+									<input type="tel" placeholder="+996 12-34-56" class="form-control phone" id="dsago0421" required>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="dsago099" class="name__input">Номер паспорта*</small></label>
+									<input type="text" class="form-control" id="dsago099" required>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="dsago0999" class="name__input">Адрес электронной почты*</small></label>
+									<input type="email" class="form-control" id="dsago0999" required>
+								</div>
+								<p>
+									Приложить электронные документы
+								</p>
+								<div>
+									<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+									<label for="vehicle1" class="name__input">Является водителем</label><br>
+								</div>
+								<p class="line2">
+									Адрес регистрации:
+								</p>
+								<div class="block-address">
+									<div class="col-2-5">
+										<label for="ind1" class="name__input">Индекс</label>
+										<input type="text" class="form-control" id="ind1">
+									</div>
+									<div class="col-3 block-address__div1 ">
+										<p class="name__input">Область</p>
+										<select name="country5" id="country5">
+											<option value="obl"></option>
+											<option value="bat" >Баткенская</option>
+											<option value="dja">Джалал-Абадская </option>
+											<option value="ik">Иссык-Кульская </option>
+											<option value="nar">Нарынская</option>
+											<option value="osh">Ошская</option>
+											<option value="tls">Таласская</option>
+											<option value="chu">Чуйская</option>
+										</select>
+									</div>
+									<div class="col-6">
+										<p class="name__input">Район</p>
+										<select name="city5" id="city5">
+											<option value="region" selected></option>
+										</select>
+									</div>
+									<div class="col-12">
+										<p class="name__input">Населённый пункт</p>
+										<select name="" id="">
+											<option value="" selected></option>
+											<option value="">Город</option>
+											<option value="">Село</option>
+										</select>
+									</div>
+									<div class="col-6">
+										<label for="ind2" class="name__input">Улица</label>
+										<input type="text" class="form-control" id="ind2">
+									</div>
+									<div class="col-2-1">
+										<label for="ind3" class="name__input">Дом</label>
+										<input type="text" class="form-control" id="ind3">
+									</div>
+									<div class="col-2-1">
+										<label for="ind4" class="name__input">Корпус</label>
+										<input type="text" class="form-control" id="ind4">
+									</div>
+									<div class="col-2-1">
+										<label for="ind5" class="name__input">Квартира</label>
+										<input type="text" class="form-control" id="ind5">
+									</div>
+								</div>
+								<div class="mb-3">
+									<label for="standart01" class="name__input">ФИО водителя авто*</label>
+									<input type="text" class="form-control" id="standart01" required>
+								</div>
+								<!--  -->
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input ShowOrHide" type="checkbox" value="" id="invalidCheckall2">
+										<label class="form-check-label name__input" for="invalidCheckall2">
+											Иностранный гражданин
+										</label>
+										<div id="hide4" class="ShowOrHide row" style="display:none;">
+											<div class="mb-3 col-6">
+												<label for="n1" class="name__input">Гражданство*</label>
+												<input type="text" class="form-control" id="n1" required>
+											</div>
+											<div class="mb-3 col-6">
+												<label for="n21" class="name__input">Серия водительского удостоверения*</label>
+												<input type="text" class="form-control" id="n21" required>
+											</div>
+											<div class="mb-3 col-6">
+												<label for="n2" class="name__input"> Дата рождения*</label>
+												<input type="text" class="form-control" id="n2" required>
+											</div>
+											<div class="mb-3 col-6">
+												<label for="n5" class="name__input">Номер водительского удостоверения*</label>
+												<input type="text" class="form-control" id="n5" required>
+											</div>
+											<div class="mb-3 col-6">
+												<label for="n6" class="name__input">Серия документа, удостоверяющая личность*</label>
+												<input type="text" class="form-control" id="n6" required>
+											</div>
+											<div class="mb-3 col-6">
+												<label for="n3" class="name__input">Общий водительский стаж (лет)*</label>
+												<input type="number" class="form-control" id="n3" required>
+											</div>
+											<div class="mb-3 col-6">
+												<label for="n7" class="name__input">Номер документа, удостоверяющий личность*</label>
+												<input type="number" class="form-control" id="n7" required>
+											</div>
+											<div class="mb-3 col-6">
+												<label for="n4" class="name__input">Контактный телефон</label>
+												<input type="tel" placeholder="+996 12-34-56" class="form-control phone" id="all34" required>
+											</div>
+									 </div>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="file"  name="send-file" class="form-control-file">
+								</div>
+								<div class="mb-3 col-6 class-1">
+									<label for="" class="form-group__text">Водителю присвоен класс:</label>
+									<input type="text">
+								</div>
+								<p class="text__1">Адрес регистрации:</p>
+								<div class="block-address">
+									<div class="col-2-5">
+										<label for="a1" class="name__input">Индекс</label>
+										<input type="text" class="form-control" id="a1">
+									</div>
+									<div class="col-3 block-address__div1 ">
+										<p class="name__input">Область</p>
+										<select name="country6" id="country6">
+											<option value="obl"></option>
+											<option value="bat" >Баткенская</option>
+											<option value="dja">Джалал-Абадская </option>
+											<option value="ik">Иссык-Кульская </option>
+											<option value="nar">Нарынская</option>
+											<option value="osh">Ошская</option>
+											<option value="tls">Таласская</option>
+											<option value="chu">Чуйская</option>
+										</select>
+									</div>
+									<div class="col-6">
+										<p class="name__input">Район</p>
+										<select name="city6" id="city6">
+											<option value="region" selected></option>
+										</select>
+									</div>
+									<div class="col-12">
+										<p class="name__input">Населённый пункт</p>
+										<select name="" id="">
+											<option value="" selected></option>
+											<option value="">Город</option>
+											<option value="">Село</option>
+										</select>
+									</div>
+									<div class="col-6">
+										<label for="a2" class="name__input">Улица</label>
+										<input type="text" class="form-control" id="a2">
+									</div>
+									<div class="col-2-1">
+										<label for="a3" class="name__input">Дом</label>
+										<input type="text" class="form-control" id="a3">
+									</div>
+									<div class="col-2-1">
+										<label for="a4" class="name__input">Корпус</label>
+										<input type="text" class="form-control" id="a4">
+									</div>
+									<div class="col-2-1">
+										<label for="a5" class="name__input">Квартира</label>
+										<input type="text" class="form-control" id="a5">
+									</div>
+									<div class="mb-3">
+										<label for="standart01" class="name__input">ФИО водителя авто*</label>
+										<input type="text" class="form-control" id="standart01" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input ShowOrHide1" type="checkbox" value="" id="morechkeck">
+										<label class="form-check-label name__input" for="morechkeck">
+											Добавить ещё одного человека, который может быть водителем этого авто
+										</label>
+										<div id="hide10" class="ShowOrHide1 row" style="display:none;">
+										<!--  -->
+										<div class="form-group">
+											<div class="mb-3">
+												<label for="dd1" class="name__input">ФИО водителя авто*</label>
+												<input type="text" class="form-control" id="dd1" required>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input ShowOrHide" type="checkbox" value="" id="invalidCheckall5">
+												<label class="form-check-label name__input" for="invalidCheckall5">
+													Иностранный гражданин
+												</label>
+												<div id="hide2" class="ShowOrHide row" style="display:none;">
+													<div class="mb-3 col-6">
+														<label for="n1" class="name__input">Гражданство*</label>
+														<input type="text" class="form-control" id="n1" required>
+													</div>
+													<div class="mb-3 col-6">
+														<label for="n21" class="name__input">Серия водительского удостоверения*</label>
+														<input type="text" class="form-control" id="n21" required>
+													</div>
+													<div class="mb-3 col-6">
+														<label for="n2" class="name__input"> Дата рождения*</label>
+														<input type="text" class="form-control" id="n2" required>
+													</div>
+													<div class="mb-3 col-6">
+														<label for="n5" class="name__input">Номер водительского удостоверения*</label>
+														<input type="text" class="form-control" id="n5" required>
+													</div>
+													<div class="mb-3 col-6">
+														<label for="n6" class="name__input">Серия документа, удостоверяющая личность*</label>
+														<input type="text" class="form-control" id="n6" required>
+													</div>
+													<div class="mb-3 col-6">
+														<label for="n3" class="name__input">Общий водительский стаж (лет)*</label>
+														<input type="number" class="form-control" id="n3" required>
+													</div>
+													<div class="mb-3 col-6">
+														<label for="n7" class="name__input">Номер документа, удостоверяющий личность*</label>
+														<input type="number" class="form-control" id="n7" required>
+													</div>
+													<div class="mb-3 col-6">
+														<label for="n4" class="name__input">Контактный телефон</label>
+														<input type="tel" placeholder="+996 12-34-56" class="form-control phone" id="all34" required>
+													</div>
+											 </div>
+											</div>
+										</div>
+										<div class="form-group">
+											<input type="file"  name="send-file" class="form-control-file">
+										</div>
+										<div class="mb-3 col-6 class-1">
+											<label for="" class="form-group__text">Водителю присвоен класс:</label>
+											<input type="text">
+										</div>
+										<p class="text__1">Адрес регистрации:</p>
+										<div class="block-address">
+											<div class="col-2-5">
+												<label for="a1" class="name__input">Индекс</label>
+												<input type="text" class="form-control" id="a1">
+											</div>
+											<div class="col-3 block-address__div1 ">
+												<p class="name__input">Область</p>
+												<select name="country6" id="country6">
+													<option value="obl"></option>
+													<option value="bat" >Баткенская</option>
+													<option value="dja">Джалал-Абадская </option>
+													<option value="ik">Иссык-Кульская </option>
+													<option value="nar">Нарынская</option>
+													<option value="osh">Ошская</option>
+													<option value="tls">Таласская</option>
+													<option value="chu">Чуйская</option>
+												</select>
+											</div>
+											<div class="col-6">
+												<p class="name__input">Район</p>
+												<select name="city6" id="city6">
+													<option value="region" selected></option>
+												</select>
+											</div>
+											<div class="col-12">
+												<p class="name__input">Населённый пункт</p>
+												<select name="" id="">
+													<option value="" selected></option>
+													<option value="">Город</option>
+													<option value="">Село</option>
+												</select>
+											</div>
+											<div class="col-6">
+												<label for="a2" class="name__input">Улица</label>
+												<input type="text" class="form-control" id="a2">
+											</div>
+											<div class="col-2-1">
+												<label for="a3" class="name__input">Дом</label>
+												<input type="text" class="form-control" id="a3">
+											</div>
+											<div class="col-2-1">
+												<label for="a4" class="name__input">Корпус</label>
+												<input type="text" class="form-control" id="a4">
+											</div>
+											<div class="col-2-1">
+												<label for="a5" class="name__input">Квартира</label>
+												<input type="text" class="form-control" id="a5">
+											</div>
+											<div class="mb-3">
+												<label for="standart01" class="name__input">ФИО водителя авто*</label>
+												<input type="text" class="form-control" id="standart01" required>
+											</div>
+										</div>
+										</div>
+									</div>
+								</div>
+								<div class="flex">
+									<input type="checkbox" id="checkNoAmount" name="checkNoAmount" value="Bike">
+									<label for="checkNoAmount"> Авто может управлять неограниченное количество людей</label><br>
+								</div>
+								<div>
+									<p class="text__1">Транспортное средство может быть использовано с прицепом?*</p>
+									<div class="d-flex mb-3 col-6 ">
+										<div class="margin-right">
+											<input type="checkbox" id="vehicle3" name="vehicle3" value="Bike">
+											<label for="vehicle3">Да</label><br>
+										</div>
+										<div class="margin-right">
+											<input type="checkbox" id="vehicle4" name="vehicle4" value="Bike">
+											<label for="vehicle4">Нет</label><br>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p class="text__1">Цель использования транспортного средства (отметить нужное)*</p>
+									<ul>
+										<li class="flex">
+											<input type="checkbox" id="b1" name="b1" value="Car">
+											<label for="b1">Личная</label>
+										</li>
+										<li class="flex">
+											<input type="checkbox" id="b2" name="b2" value="Car">
+											<label for="b2">Учебная езда</label>
+										</li>
+										<li class="flex">
+											<input type="checkbox" id="b3" name="b3" value="Car">
+											<label for="b3">Такси</label>
+										</li>
+										<li class="flex">
+											<input type="checkbox" id="b4" name="b4" value="Car">
+											<label for="b4">Перевозка опасных и легковоспламеняющихся грузов</label>
+										</li>
+										<li class="flex">
+											<input type="checkbox" id="b5" name="b5" value="Car">
+											<label for="b5">Прокат/Краткосрочная аренда</label>
+										</li>
+										<li class="flex">
+											<input type="checkbox" id="b6" name="b6" value="Car">
+											<label for="b6">Регулярные пассажирские перевозки/Перевозки пассажиров по заказам</label>
+										</li>
+										<li class="flex">
+											<input type="checkbox" id="b7" name="b7" value="Car">
+											<label for="b7">Дорожные и специальные транспортные средства</label>
+										</li>
+										<li class="flex">
+											<input type="checkbox" id="b8" name="b8" value="Car">
+											<label for="b8">Экстренные и коммунальные службы </label>
+										</li>
+										<li class="flex">
+											<input type="checkbox" id="b9" name="b9" value="Car">
+											<label for="b9">Прочее</label>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<p class="text__1">Предыдущий договор обязательного страхования гражданской ответственности владельцев транспортных средств в отношении указанного транспортного средства*</p>
+									<div class="d-flex block__1">
+										<div class="col-3">
+											<label for="b1" class="name__input">Серия</small></label>
+											<input type="text" class="form-control" id="b1" required>
+										</div>
+										<div class="col-5">
+											<label for="b2" class="name__input">Номер</small></label>
+											<input type="text" class="form-control" id="b2" required>
+										</div>
+									</div>
+								</div>
+								<p class="line3">
+									Выберите даты начала и окончания действия страхового полиса
+									<br>
+									<small>
+										(стоимость снижается при выборе срока действия меньше 1 года)
+									</small>
+								</p>
+								<div class="individuals-date date5">
+									Договор действует с
+									<div class="date1">
+										<label for="date1">Дата начала действия*</label>
+										<input type="date" name="" id="date1" class="date-start">
+									</div>
+									по
+									<div class="date1">
+										<label for="date2">Дата окончания действия*</label>
+										<input type="date" name="" id="date2" class="date-end">
+									</div>
+									включительно
+								</div>
+
+								<div id="result"></div>
+								<div class="form-group form-group-center">
+									<div class="checkbox-style form-check">
+										<input class="form-check-input" type="checkbox" value="" id="invalidCheckdsago1" required>
+										<label class="form-check-label" for="invalidCheckdsago1">
+											Я подтверждаю, что ознакомлен(а) и согласен(сна) с
+											<a href="">
+												условиями 
+											</a>
+											имущества
+											<a href="">
+												правилами 
+											</a>
+											страхования
+										</label>
+										<div class="invalid-feedback">
+											Для оформления вы должны подтвердить
+										</div>
+									</div>
+								</div>
+								<div class="pay__block">
+									<p class="text__1">Выберите способ оплаты</p>
+									<div class="pay">
+										<a href="">
+											<img src="assets/img/icons/elsom.png" alt="">
+										</a>
+										<a href="">
+											<img src="assets/img/icons/mbannk.png" alt="">
+										</a>
+										<a href="">
+											<img src="assets/img/icons/megapay.jpg" alt="">
+										</a>
+									</div>
+								</div>
+						</div>
+						<div class="modal-footer background">
+							<button type="submit" class="btn">ОФОРМИТЬ И ОПЛАТИТЬ</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+<footer>
+	<div class="wrapper d-flex footer">
+		<div class="footer__block">
+			<h5 class="title-h5">
+				Центральный офис
+			</h5>
+			<ul>
+				<li class="footer__li">
+					<a href="https://goo.gl/maps/aE6UkSa8LEPzUebKA" class="footer__text footer-flex">
+						<i class="fa-solid fa-location-dot footer__icon"></i>
+						<span class="footer-add">
+							Кыргызстан, г. Бишкек, ул. Московская, 37/2, 2 этаж
+						</span>	
+					</a>
+					</li>
+				<li class="footer__li">
+					<a href="tel:tel:+996708487435" class="footer__text footer-flex">
+						<i class="fa-solid fa-phone footer__icon"></i>
+						<span>
+							+996 708 48 74 35
+						</span>
+					</a>
+				</li>
+				<li class="footer__li">
+					<a href="tel:+996559383636" class="footer__text footer-flex">
+						<i class="fa-solid fa-phone footer__icon"></i>
+						<span>
+							+996 559 38 36 36
+						</span>
+					</a>
+				</li>
+				<li class="footer__li">
+					<a href="tel:+996312383131" class="footer__text footer-flex">
+						<i class="fa-solid fa-phone footer__icon"></i>
+						<span>
+								+996 312 38 31 31
+						</span>
+					</a>
+				</li>
+				<li class="footer__li">
+					<a href="tel:+996312383636" class="footer__text footer-flex">
+						<i class="fa-solid fa-phone footer__icon"></i>
+						<span>
+							+996 312 38 36 36
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__block">
+			<h5 class="title-h5">
+				График работы: <br>
+				пн-пт с 8:30 до 17:30
+			</h5>
+			<div class="footer__map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.16812214565!2d74.61731301522751!3d42.86929551078267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7b655f00889%3A0x462a828787f32b30!2s37%20Moskovskaya%20Street%2C%20Bishkek!5e0!3m2!1sen!2skg!4v1652297377341!5m2!1sen!2skg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<!-- <div class="footer__time">
+				<p class="footer__text footer__li">
+					График работы: <br>
+					пн-пт с 8:30 до 17:30
+				</p>
+			</div> -->
+		</div>
+		<div class="footer__block">
+			<h5 class="title-h5">
+				Филиалы
+			</h5>
+			<ul>
+				<li class="footer__text footer__li">
+					Южный Региональный Филиал
+				</li>
+				<li class="footer__text footer__li">
+					Таласский областной филиал
+				</li>
+				<li class="footer__text footer__li">
+					Нарынский областной филиал
+				</li>
+				<li class="footer__text footer__li">
+					Каракольский областной филиал
+				</li>
+			</ul>
+			<div class="footer__social-block">
+				<ul class="footer__social">
+					<li class="social__instagramm">
+						<a href=""></a>
+					</li>
+					<li class="social__facebook">
+						<a href=""></a>
+					</li>
+				</ul>
+			</div>
+		</div>			
+	</div>
+</footer>		
+<script
+	src='https://code.jquery.com/jquery-3.6.0.js'
+	integrity='sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk='
+	crossorigin='anonymous'>
+</script>
+
+<script 
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+	crossorigin="anonymous">
+</script>
+
+<script>
+	$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+</script>
+
+<script>
+	// тип авто
+	const coefficients = {
+  'auto1-1': 1.0,
+  'auto1-2': 1.20,
+  'auto1-3': 1.45,
+	'auto2-1': 1.0,
+	'auto2-2': 1.20,
+	'auto3-1': 1.60,
+	'auto3-2': 2.0,
+	'auto4-1': 1.45,
+	'auto4-2': 1.65,
+	'auto5': 0.8,
+  'auto6': 0.45,
+	'auto7': 0.45,
+  'auto8': 0.45,
+	'auto9': 0.45,
+  'auto10': 0.45,
+	'auto11': 0.45,
+  'auto12': 0.45,
+};
+
+//гражданство 
+const citizenship ={
+	'kg': 1.0,
+	'oth': 2.20,
+};
+
+// количество дней
+var total
+const dateStart = document.querySelector(".date-start");
+const dateEnd = document.querySelector(".date-end");
+const totalPrice = document.querySelector(".total-price");
+
+dateStart.addEventListener("input", () => calculerPrix());
+dateEnd.addEventListener("input", () => calculerPrix());
+const calculerPrix = () => {
+  if (dateEnd.value === "" || dateStart.value === "") return;
+  totalPrice.innerText = `${getNumberOfDays(dateStart.value, dateEnd.value)} days`;
+}
+
+const getNumberOfDays = (start, end) => {
+    const date1 = new Date(start);
+    const date2 = new Date(end);
+    const oneDay = 1000 * 60 * 60 * 24;
+    const diffInTime = date2.getTime() - date1.getTime();
+    const diffInDays = Math.round(diffInTime / oneDay);  
+    return get(diffInDays);
+}
+function get(dif){
+  if(dif > 5 && dif < 15) {
+    return 0.2
+  }
+  if(dif > 16 && dif < 31) {
+    return 0.3
+  }
+  if(dif > 90) {
+    return 0.5
+  }
+  if(dif > 180) {
+    return 0.7
+  }
+  if(dif > 270) {
+    return 0.9
+  }
+  if(dif > 365) {
+    return 1
+  }
+}
+
+const selectCarType = document.querySelector('#carType');
+const selectCountry = document.querySelector('#citizenship');
+const checkDiagnostics = document.querySelector('#checkDiagnostics');
+const checkNoAmount = document.querySelector('#checkNoAmount');
+const result = document.querySelector('#result');
+
+const update = () => {
+  const sType = coefficients[selectCarType.value];
+  const cType = citizenship[selectCountry.value];
+  const cDiag = checkDiagnostics.checked ? 0.8 : 1;
+  const cAmount = checkNoAmount.checked ? 1 : 1.6;
+	const cDays = getNumberOfDays(dateStart.value, dateEnd.value);
+  console.log('cDays', cDays);
+  
+  const total = 1680 * sType * cType * cDiag * cAmount * cDays;
+  result.innerText = `Итоговая цена: ${total.toFixed(5)} руб`;
+}
+
+update(); // initial
+
+selectCarType.addEventListener('change', update);
+selectCountry.addEventListener('change', update);
+checkDiagnostics.addEventListener('change', update);
+checkNoAmount.addEventListener('change', update);
+dateStart.addEventListener('change', update);
+dateEnd.addEventListener('change', update);
+</script>
+
+<script src="js/index.js"></script>
+<script src="js/ind.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
+

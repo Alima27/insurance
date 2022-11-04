@@ -1,0 +1,168 @@
+.nav-tabs{
+	background: #0b3c32;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	color: #0B3C32 !important;
+	background-color: #e9cb76 !important;
+	border-color: unset !important;
+}
+
+li.nav-item {
+	width: 50%;
+	text-align: center;
+}
+
+.nav-tabs .nav-link{
+	border-top-left-radius:unset !important;
+	border-top-right-radius: unset !important
+}
+
+.nav-tabs .nav-link{
+	border: unset !important;
+}
+
+.nav-link{
+	color: #e9cb76 !important;
+	font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+.nav-link:hover{
+	color: #e9cb76 !important;
+}
+
+.profile__img {
+	width: 420px;
+	height: 305px;
+	margin: 20px auto;
+}
+
+.profile__img img{
+	height: 100%;
+	width: 100%;
+}
+
+div#myTabContent {
+	padding: 10px;
+}
+
+.profile__block1{
+	text-align: center;
+	margin: 0 40px;
+	margin-right: 20%;
+}
+
+.profile__block {
+	justify-content: flex-start;
+	padding: 15px 0;
+}
+
+.profile__block1 h3{
+	font-size: 28px;
+  color: #0b3c32;
+  font-weight: 800;
+}
+
+.profile__block1 h4{
+	font-size: 26px;
+  color: #0b3c32;
+  font-weight: 800;
+}
+
+label {
+	font-size: 16px;
+	color: #103e35;
+	font-weight: 500;
+}
+
+.profile__block1 p,.profile__block2 p{
+	font-size: 18px;
+	color: #0b3c32;
+	font-weight: 500;
+	line-height: 29px;
+}
+
+.active{
+	background-color: unset !important;
+}
+
+.col-md-6 {
+	flex: 0 0 auto;
+	width: 55%;
+	margin: 0 auto;
+}
+
+.form-group {
+	margin: 0 auto;
+	display: block;
+	width: 50%;
+}
+
+
+button.btn.btn-primary {
+	display: block;
+	margin: 0 auto;
+}
+
+.btn-profile{
+	background: #0b3c32 !important;
+	color: #e9cb76 !important;
+	font-size: 20px !important;
+  font-weight: 800 !important;
+  line-height: 25px !important;
+	display: block !important;
+	margin: 20px auto;
+	padding: 15px !important
+}
+
+form.needs-validation {
+	margin: 25px 0;
+}
+
+@media (max-width:798px){
+	.profile__block {
+    flex-direction: column;
+	}
+
+	.profile__block1 {
+    margin: 0 5px;
+    margin-right: 0 ;
+	}
+
+	.profile__img {
+		width: 80%;
+		height: 200px;
+		margin: 15px auto;
+	}
+
+	.profile__block1 h3 {
+    font-size: 25px;
+    color: #0b3c32;
+    font-weight: 800;
+	}
+
+	.profile__block1 h4 {
+		font-size: 24px;
+		color: #0b3c32;
+		font-weight: 800;
+	}
+
+	li.nav-item {
+    width: 100%;
+    text-align: center;
+	}
+
+	.col-md-6 {
+		flex: 0 0 auto;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.form-group {
+		margin: 0 auto;
+		display: block;
+		width: 100%;
+	}
+}
